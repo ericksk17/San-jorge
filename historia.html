@@ -1,0 +1,58 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+<title>San Jorge Turismo</title>
+</head><body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px">Saltar al contenido</a>
+<header><div class="container nav">
+  <button id="menuBtn" aria-label="Menú" aria-expanded="false" class="action">☰</button>
+  <div class="brand"><div class="brand-badge">✦</div> San Jorge Turismo</div>
+  <nav>
+    <a href="index.html"><span data-i18n="nav.home">Inicio</span></a>
+    <a href="historia.html"><span data-i18n="nav.hist">Historia</span></a>
+    <a href="gastronomía.html"><span data-i18n="nav.econ">gastronomía</span></a>
+    <a href="sitios.html"><span data-i18n="nav.sitios">Sitios</span></a>
+    <a href="sobre.html"><span data-i18n="nav.sobre">San Jorge</span></a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeBtn" class="action" aria-label="Cambiar tema" title="Tema oscuro">🌙</button>
+    <button id="langBtn" class="action" aria-label="Cambiar idioma" title="Switch to English">ES</button>
+    <button id="searchBtn" class="action" aria-label="Buscar">🔎</button>
+  </div>
+</div></header>
+<main id="main" class="container">
+
+<section class="section">
+  <h2>Historia y Cultura</h2>
+  <div class="card"><p class="meta">San Jorge es un municipio del departamento de Rivas, ubicado a orillas del lago Cocibolca, en el suroeste de Nicaragua. Es conocido principalmente por ser el puerto de salida hacia la Isla de Ometepe, lo que lo convierte en un punto clave para el turismo nacional e internacional. Su cercanía con la ciudad de Rivas y su acceso al lago le dan una posición estratégica tanto comercial como turística.
+
+Este municipio tiene una economía basada en la pesca artesanal, la agricultura (como el cultivo de plátano y yuca), y en los últimos años ha crecido el interés en el turismo comunitario y rural. San Jorge también cuenta con atractivos como su malecón, desde donde se pueden disfrutar bellos paisajes del lago y los volcanes de Ometepe.  </p></div>
+  <div class="grid cols-3" style="margin-top:12px">
+    <div class="card"><h3>Villa y ciudad</h3><p class="meta">1852 y 1931.</p></div>
+    <div class="card"><h3>Campaña Nacional</h3><p class="meta">Hechos de 1856–1857; rendición de Walker (mayo 1857).</p></div>
+    <div class="card"><h3>Patrimonio</h3><p class="meta">Iglesia histórica y sitio “Cruz de España”.</p></div>
+  </div>
+</section>
+</main>
+<div id="searchOverlay" hidden>
+  <div class="search-backdrop"></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+    <div class="search-header">
+      <h2 id="searchTitle">Buscar</h2>
+      <button id="searchClose" class="action" aria-label="Cerrar">✖</button>
+    </div>
+    <div class="search-input">
+      🔎<input id="searchField" type="search" placeholder="Buscar en el sitio..." autocomplete="off" />
+    </div>
+    <div id="searchResults" class="search-results" role="listbox" aria-label="Resultados"></div>
+  </div>
+</div>
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <small>© 2025 San Jorge Turismo • Hecho en Nicaragua</small>
+    <small style="color:var(--muted)">Tema verde neon + glass • accesible y responsive</small>
+  </div>
+</footer>
+<script src="assets/js/app.js" defer></script>
+</body></html>
