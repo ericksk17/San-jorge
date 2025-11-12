@@ -1,0 +1,67 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+<title>San Jorge Turismo</title>
+</head><body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px">Saltar al contenido</a>
+<header><div class="container nav">
+  <button id="menuBtn" aria-label="Menú" aria-expanded="false" class="action">☰</button>
+  <div class="brand"><div class="brand-badge">✦</div> San Jorge Turismo</div>
+  <nav>
+    <a href="index.html"><span data-i18n="nav.home">Inicio</span></a>
+    <a href="historia.html"><span data-i18n="nav.hist">Historia</span></a>
+    <a href="gastronomía.html"><span data-i18n="nav.econ">Economía</span></a>
+    <a href="sitios.html"><span data-i18n="nav.sitios">Sitios</span></a>
+    <a href="sobre.html"><span data-i18n="nav.sobre">San Jorge</span></a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeBtn" class="action" aria-label="Cambiar tema" title="Tema oscuro">🌙</button>
+    <button id="langBtn" class="action" aria-label="Cambiar idioma" title="Switch to English">ES</button>
+    <button id="searchBtn" class="action" aria-label="Buscar">🔎</button>
+  </div>
+</div></header>
+<main id="main" class="container">
+
+<section class="section">
+  <h2>Sobre San Jorge</h2>
+  <div class="grid cols-3">
+    <div class="card"><h3>Ubicación y límites</h3><p class="meta">Municipio de Rivas, a <strong>115 km</strong> de Managua. Limita al <strong>N</strong> con Buenos Aires, al <strong>S/O</strong> con Rivas y al <strong>E</strong> con el Lago Cocibolca. Altitud media <strong>54 msnm</strong>; superficie <strong>24.83 km²</strong>.</p></div>
+    <div class="card"><h3>Demografía</h3><p class="meta"><strong>9,142</strong> hab. (2022), <strong>81.2%</strong> urbana.</p></div>
+    <div class="card"><h3>Historia</h3><p class="meta">Asiento nicarao; convento franciscano (s. XVI). Villa (1852) y ciudad (1931). Rendición de Walker (1857).</p></div>
+  </div>
+  <h3>Economía</h3>
+  <div class="grid cols-3">
+    <div class="card"><h4>Agricultura</h4><p class="meta">Plátano, cítricos, hortalizas y papaya.</p></div>
+    <div class="card"><h4>Ganadería</h4><p class="meta">Carne y leche.</p></div>
+    <div class="card"><h4>Pesca e industria</h4><p class="meta">Pesca artesanal y ladrillo de barro (Apataco).</p></div>
+  </div>
+  <h3>Naturaleza y clima</h3>
+  <div class="grid cols-3">
+    <div class="card"><h4>Clima</h4><p class="meta">Tropical de sabana semi‑húmedo; 26–27 °C y 1400–1500 mm/año.</p></div>
+    <div class="card"><h4>Ríos</h4><p class="meta">Oro, Obrajuelo, Enmedio y Las Lajas.</p></div>
+    <div class="card"><h4>Vegetación</h4><p class="meta">Helequeme, ceibo espino negro, chilamate, pochote.</p></div>
+  </div>
+</section>
+</main>
+<div id="searchOverlay" hidden>
+  <div class="search-backdrop"></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+    <div class="search-header">
+      <h2 id="searchTitle">Buscar</h2>
+      <button id="searchClose" class="action" aria-label="Cerrar">✖</button>
+    </div>
+    <div class="search-input">
+      🔎<input id="searchField" type="search" placeholder="Buscar en el sitio..." autocomplete="off" />
+    </div>
+    <div id="searchResults" class="search-results" role="listbox" aria-label="Resultados"></div>
+  </div>
+</div>
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <small>© 2025 San Jorge Turismo • Hecho en Nicaragua</small>
+    <small style="color:var(--muted)">Tema verde neon + glass • accesible y responsive</small>
+  </div>
+</footer>
+<script src="assets/js/app.js" defer></script>
+</body></html>

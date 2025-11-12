@@ -1,0 +1,85 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+<title>San Jorge Turismo</title>
+</head><body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px">Saltar al contenido</a>
+<header><div class="container nav">
+  <button id="menuBtn" aria-label="Menú" aria-expanded="false" class="action">☰</button>
+  <div class="brand">
+        <img src="assets/img/logo.png" alt="San Jorge Turismo" class="brand-logo">
+        San Jorge Turismo
+      </div>
+  <nav>
+    <a href="index.html"><span data-i18n="nav.home">Inicio</span></a>
+    <a href="historia.html"><span data-i18n="nav.hist">Historia</span></a>
+    <a href="gastronomía.html"><span data-i18n="nav.econ">Economía</span></a>
+    <a href="sitios.html"><span data-i18n="nav.sitios">Sitios</span></a>
+    <a href="sobre.html"><span data-i18n="nav.sobre">San Jorge</span></a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeBtn" class="action" aria-label="Cambiar tema" title="Tema oscuro">🌙</button>
+    <button id="langBtn" class="action" aria-label="Cambiar idioma" title="Switch to English">ES</button>
+    <button id="searchBtn" class="action" aria-label="Buscar">🔎</button>
+  </div>
+</div></header>
+<main id="main" class="container">
+
+<section class="section hero">
+  <div class="stack">
+    <div class="kicker" data-i18n="index.kicker">Puerto • Cultura • Naturaleza</div>
+    <h1 data-i18n="index.h1">Bienvenido a San Jorge</h1>
+    <p class="lead" data-i18n="index.p">Puerta de entrada a Ometepe, con legado nicarao, puerto activo y paisajes del Cocibolca.</p>
+    <div>
+      <a class="btn primary" href="sitios.html">🗺️ <span data-i18n="index.cta1">Descubrir sitios</span></a>
+    </div>
+  </div>
+  <div class="shots">
+    <img class="lightboxable" src="assets/img/puerto.jpg" alt="Puerto de San Jorge">
+    <img class="lightboxable" src="assets/img/malecon.jpg" alt="Malecón de San Jorge">
+    <img class="lightboxable" src="assets/img/iglesia.jpg" alt="Iglesia de San Jorge">
+    <img class="lightboxable" src="assets/img/playa.jpg" alt="Playa de San Jorge">
+    <img class="lightboxable" src="assets/img/playa2.jpeg" alt="Playa de San Jorge">
+    <img class="lightboxable" src="assets/img/malecon2.jpeg" alt="Malecón de San Jorge">
+  </div>
+</section>
+<section class="section">
+  <h2 data-i18n="index.h2why">Motivos para visitar</h2>
+  <div class="grid cols-3">
+    <div class="card"><h3>Puerto estratégico</h3><p class="meta">Conexión directa a Ometepe por el lago Cocibolca.</p></div>
+    <div class="card"><h3>Tradición viva</h3><p class="meta">Fiestas patronales (19–23 de abril) y legado nicarao‑colonial.</p></div>
+    <div class="card"><h3>A orillas del lago</h3><p class="meta">Malecón, playa y vistas a Concepción y Maderas.</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2 data-i18n="index.h2gal">Galería</h2>
+  <div class="gallery">
+    <figure><img class="lightboxable" src="assets/img/puerto.jpg" alt="Puerto de San Jorge"><figcaption>Puerto</figcaption></figure>
+    <figure><img class="lightboxable" src="assets/img/malecon.jpg" alt="Malecón de San Jorge"><figcaption>Malecón</figcaption></figure>
+    <figure><img class="lightboxable" src="assets/img/iglesia.jpg" alt="Iglesia de San Jorge"><figcaption>Iglesia</figcaption></figure>
+    <figure><img class="lightboxable" src="assets/img/playa.jpg" alt="Playa de San Jorge"><figcaption>Playa</figcaption></figure>
+  </div>
+</section>
+</main>
+<div id="searchOverlay" hidden>
+  <div class="search-backdrop"></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+    <div class="search-header">
+      <h2 id="searchTitle">Buscar</h2>
+      <button id="searchClose" class="action" aria-label="Cerrar">✖</button>
+    </div>
+    <div class="search-input">
+      🔎<input id="searchField" type="search" placeholder="Buscar en el sitio..." autocomplete="off" />
+    </div>
+    <div id="searchResults" class="search-results" role="listbox" aria-label="Resultados"></div>
+  </div>
+</div>
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <small>© 2025 San Jorge Turismo • Hecho en Nicaragua</small>
+    <small style="color:var(--muted)">Tema verde /small>
+  </div>
+</footer>
+<script src="assets/js/app.js" defer></script>
+</body></html>
